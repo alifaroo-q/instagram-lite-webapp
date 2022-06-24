@@ -1,0 +1,20 @@
+body {
+    font-family: "Poppins", serif;
+    background: #f8f9fd;
+}
+
+.header {
+    padding: 0.5em 0.5em;
+    background: #f09433;
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.nav-link {
+    color: black;
+}
+
+.spacer {
+    margin-top: 50px;
+}
