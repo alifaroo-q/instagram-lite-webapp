@@ -28,6 +28,6 @@ btnSubmit.addEventListener('click', () => {
         headers: {"Content-type": "application/json; charset=UTF-8"}
     })
         .then(response => response.json())
-        .then(json => console.log(json));
-
+        .then(json => console.log(json))
+        .then(alert("account created successfully"))
 });
