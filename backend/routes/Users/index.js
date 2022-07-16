@@ -59,7 +59,6 @@ router.post('/', (req, res) => {
 
     db.query(sql, values, (error, results) => {
         if (error) res.status(500).json({message: error.sqlMessage});
-        res.redirect("http://127.0.0.1:5500/src/pages/login.html");
         res.status(201).json({id: results.insertId, ...user});
     });
 

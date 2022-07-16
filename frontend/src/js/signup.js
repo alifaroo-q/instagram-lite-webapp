@@ -29,5 +29,11 @@ btnSubmit.addEventListener('click', () => {
     })
         .then(response => response.json())
         .then(json => console.log(json))
-        .then(alert("account created successfully"))
+        .catch((err) => {
+            alert("Error: " + err.message)
+        })
+        .finally(() => {
+           alert("account created successfully");
+           window.location.replace("http://127.0.0.1:5500/src/pages/login.html");
+        });
 });
